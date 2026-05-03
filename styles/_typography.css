@@ -1,0 +1,15 @@
+/* _typography.css */
+h1, h2, h3, h4, h5, h6 { line-height: 1.2; font-weight: 700; }
+.kpi-value, .step-value, .influencer-stat .num { font-family: var(--font-display); }
+.breadcrumb, .login-footer, .sidebar-brand p { font-family: var(--font-display); letter-spacing: 1px; }
+.page-title { font-size: 32px; font-weight: 800; letter-spacing: -0.5px; }
+.page-subtitle { font-size: 14px; color: var(--text-secondary); }
+.section-title { font-size: 20px; font-weight: 700; color: var(--text-main); margin-bottom: var(--space-md); margin-top: var(--space-xl); display: flex; align-items: center; gap: 10px; }
+.section-title .badge { background: var(--bg-card); color: var(--primary); padding: 3px 10px; border-radius: var(--radius-full); font-size: 12px; font-weight: 600; }
+.kpi-label { font-size: 13px; color: var(--text-secondary); font-weight: 500; margin-bottom: 4px; }
+.kpi-value { font-size: 28px; font-weight: 800; color: var(--text-main); line-height: 1.2; margin-bottom: 6px; letter-spacing: -0.5px; }
+.kpi-meta { font-size: 12px; color: var(--text-secondary); display: flex; align-items: center; gap: 4px; }
+.trend-up { color: var(--success); font-weight: 700; }
+.trend-down { color: var(--danger); font-weight: 700; }
+.nav-section-label { font-size: 11px; font-weight: 600; color: var(--text-secondary); text-transform: uppercase; letter-spacing: 1px; padding: 12px 8px 8px; margin-top: 8px; }
+.breadcrumb { font-size: 12px; color: var(--text-secondary); margin-bottom: 8px; text-transform: uppercase; }
