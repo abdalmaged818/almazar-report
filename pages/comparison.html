@@ -3,57 +3,170 @@
   <div class="page-header-content">
     <div class="breadcrumb">MONTH-OVER-MONTH ANALYSIS</div>
     <h1 class="page-title">مقارنة مارس / أبريل 2026</h1>
-    <p class="page-subtitle">تحليل النمو والتراجع بين الشهرين</p>
+    <p class="page-subtitle">تحليل مقارن شهرين متتاليين</p>
   </div>
-  <span class="page-badge">⇆ MoM</span>
+  <span class="page-badge">📅 مارس → أبريل</span>
 </div>
-<h2 class="section-title">المبيعات</h2>
-<div class="content-card" style="overflow-x:auto;">
-  <table class="data-table">
-    <thead><tr><th>المؤشر</th><th>مارس 2026</th><th>أبريل 2026</th><th>الفرق</th><th>التغيير</th></tr></thead>
+
+<h2 class="section-title">مقارنة المبيعات <span class="badge">نظام رواء</span></h2>
+<div class="comparison-table-wrapper">
+  <table class="comparison-table" dir="rtl">
+    <thead>
+      <tr>
+        <th>المؤشر</th>
+        <th>مارس 2026</th>
+        <th>أبريل 2026</th>
+        <th>التغيير</th>
+      </tr>
+    </thead>
     <tbody>
-      <tr><td>إجمالي المبيعات</td><td>333,527</td><td class="number-cell">379,724</td><td>+46,197</td><td><span class="comparison-badge up">▲ +13.9%</span></td></tr>
-      <tr><td>عدد الفواتير</td><td>4,809</td><td class="number-cell">4,713</td><td>-96</td><td><span class="comparison-badge down">▼ -2%</span></td></tr>
-      <tr><td>المتوسط اليومي</td><td>10,758</td><td class="number-cell">12,657</td><td>+1,899</td><td><span class="comparison-badge up">▲ +17.7%</span></td></tr>
+      <tr>
+        <td class="metric-name">إجمالي المبيعات (ريال)</td>
+        <td class="value-march"><span class="num">333,527</span></td>
+        <td class="value-april"><span class="num">379,724</span></td>
+        <td class="change-up"><span class="num">▲ +13.9%</span></td>
+      </tr>
+      <tr>
+        <td class="metric-name">متوسط يومي (ريال)</td>
+        <td class="value-march"><span class="num">10,758</span></td>
+        <td class="value-april"><span class="num">12,657</span></td>
+        <td class="change-up"><span class="num">▲ +17.7%</span></td>
+      </tr>
+      <tr>
+        <td class="metric-name">عدد الفواتير</td>
+        <td class="value-march"><span class="num">4,089</span></td>
+        <td class="value-april"><span class="num">4,713</span></td>
+        <td class="change-up"><span class="num">▲ +15.3%</span></td>
+      </tr>
+      <tr>
+        <td class="metric-name">متوسط الفاتورة (ريال)</td>
+        <td class="value-march"><span class="num">81.6</span></td>
+        <td class="value-april"><span class="num">80.6</span></td>
+        <td class="change-down"><span class="num">▼ -1.2%</span></td>
+      </tr>
+      <tr>
+        <td class="metric-name">مبيعات الغداء يومياً</td>
+        <td class="value-march"><span class="num">1,600</span></td>
+        <td class="value-april"><span class="num">3,429</span></td>
+        <td class="change-up"><span class="num">▲ +114%</span></td>
+      </tr>
     </tbody>
   </table>
 </div>
-<div class="content-card"><h3>📊 مقارنة المبيعات</h3><div class="chart-container tall"><canvas id="compSalesChart"></canvas></div></div>
+
 <h2 class="section-title">تيك توك</h2>
-<div class="content-card" style="overflow-x:auto;">
-  <table class="data-table">
-    <thead><tr><th>المؤشر</th><th>مارس</th><th>أبريل</th><th>التغيير</th></tr></thead>
+<div class="comparison-table-wrapper">
+  <table class="comparison-table" dir="rtl">
+    <thead>
+      <tr>
+        <th>المؤشر</th>
+        <th>مارس 2026</th>
+        <th>أبريل 2026</th>
+        <th>التغيير</th>
+      </tr>
+    </thead>
     <tbody>
-      <tr><td>المشاهدات</td><td>256K</td><td class="number-cell">362K</td><td><span class="comparison-badge up">▲ +41.4%</span></td></tr>
-      <tr><td>اللايكات</td><td>3,100</td><td class="number-cell">3,800</td><td><span class="comparison-badge up">▲ +22.6%</span></td></tr>
-      <tr><td>التعليقات</td><td>263</td><td class="number-cell">409</td><td><span class="comparison-badge up">▲ +55.5%</span></td></tr>
-      <tr><td>المشاركات</td><td>2,300</td><td class="number-cell">2,100</td><td><span class="comparison-badge down">▼ -8.7%</span></td></tr>
-      <tr><td>زيارات البروفايل</td><td>10K</td><td class="number-cell">9,300</td><td><span class="comparison-badge down">▼ -7%</span></td></tr>
-      <tr><td>عدد الفيديوهات</td><td>~5</td><td class="number-cell">10</td><td><span class="comparison-badge up">▲ +100%</span></td></tr>
+      <tr>
+        <td class="metric-name">المشاهدات</td>
+        <td class="value-march"><span class="num">256K</span></td>
+        <td class="value-april"><span class="num">362K</span></td>
+        <td class="change-up"><span class="num">▲ +41.4%</span></td>
+      </tr>
+      <tr>
+        <td class="metric-name">اللايكات</td>
+        <td class="value-march"><span class="num">3,100</span></td>
+        <td class="value-april"><span class="num">3,800</span></td>
+        <td class="change-up"><span class="num">▲ +22.6%</span></td>
+      </tr>
+      <tr>
+        <td class="metric-name">التعليقات</td>
+        <td class="value-march"><span class="num">263</span></td>
+        <td class="value-april"><span class="num">409</span></td>
+        <td class="change-up"><span class="num">▲ +55.5%</span></td>
+      </tr>
+      <tr>
+        <td class="metric-name">المشاركات</td>
+        <td class="value-march"><span class="num">2,300</span></td>
+        <td class="value-april"><span class="num">2,100</span></td>
+        <td class="change-down"><span class="num">▼ -8.7%</span></td>
+      </tr>
+      <tr>
+        <td class="metric-name">زيارات البروفايل</td>
+        <td class="value-march"><span class="num">10,000</span></td>
+        <td class="value-april"><span class="num">9,300</span></td>
+        <td class="change-down"><span class="num">▼ -7%</span></td>
+      </tr>
+      <tr>
+        <td class="metric-name">عدد الفيديوهات</td>
+        <td class="value-march"><span class="num">~5</span></td>
+        <td class="value-april"><span class="num">10</span></td>
+        <td class="change-up"><span class="num">▲ +100%</span></td>
+      </tr>
     </tbody>
   </table>
 </div>
-<div class="content-card"><h3>📊 مقارنة الأداء على تيك توك</h3><div class="chart-container tall"><canvas id="compTiktokChart"></canvas></div></div>
+
 <h2 class="section-title">جوجل ماب</h2>
-<div class="content-card" style="overflow-x:auto;">
-  <table class="data-table">
-    <thead><tr><th>المؤشر</th><th>مارس</th><th>أبريل</th><th>التغيير</th></tr></thead>
+<div class="comparison-table-wrapper">
+  <table class="comparison-table" dir="rtl">
+    <thead>
+      <tr>
+        <th>المؤشر</th>
+        <th>مارس 2026</th>
+        <th>أبريل 2026</th>
+        <th>التغيير</th>
+      </tr>
+    </thead>
     <tbody>
-      <tr><td>إجمالي التفاعلات</td><td>8,327</td><td class="number-cell">7,103</td><td><span class="comparison-badge down">▼ -14.7%</span></td></tr>
-      <tr><td>طلبات الاتجاهات</td><td>3,199</td><td class="number-cell">3,237</td><td><span class="comparison-badge up">▲ +1.2%</span></td></tr>
-      <tr><td>المكالمات</td><td>2,938</td><td class="number-cell">1,255</td><td><span class="comparison-badge down">▼ -57.3%</span></td></tr>
-      <tr><td>زيارات الموقع</td><td>256</td><td class="number-cell">238</td><td><span class="comparison-badge down">▼ -7%</span></td></tr>
-      <tr><td>مشاهدات القائمة</td><td>1,934</td><td class="number-cell">2,373</td><td><span class="comparison-badge up">▲ +22.7%</span></td></tr>
+      <tr>
+        <td class="metric-name">إجمالي التفاعلات</td>
+        <td class="value-march"><span class="num">8,327</span></td>
+        <td class="value-april"><span class="num">7,103</span></td>
+        <td class="change-down"><span class="num">▼ -14.7%</span></td>
+      </tr>
+      <tr>
+        <td class="metric-name">طلبات الاتجاهات</td>
+        <td class="value-march"><span class="num">3,199</span></td>
+        <td class="value-april"><span class="num">3,237</span></td>
+        <td class="change-up"><span class="num">▲ +1.2%</span></td>
+      </tr>
+      <tr>
+        <td class="metric-name">المكالمات</td>
+        <td class="value-march"><span class="num">2,938</span></td>
+        <td class="value-april"><span class="num">1,255</span></td>
+        <td class="change-down"><span class="num">▼ -57.3%</span></td>
+      </tr>
+      <tr>
+        <td class="metric-name">زيارات الموقع</td>
+        <td class="value-march"><span class="num">256</span></td>
+        <td class="value-april"><span class="num">238</span></td>
+        <td class="change-down"><span class="num">▼ -7%</span></td>
+      </tr>
+      <tr>
+        <td class="metric-name">مشاهدات القائمة</td>
+        <td class="value-march"><span class="num">1,934</span></td>
+        <td class="value-april"><span class="num">2,373</span></td>
+        <td class="change-up"><span class="num">▲ +22.7%</span></td>
+      </tr>
     </tbody>
   </table>
 </div>
-<div class="content-card"><h3>📊 مقارنة جوجل ماب</h3><div class="chart-container tall"><canvas id="compGoogleChart"></canvas></div></div>
+
 <h2 class="section-title">قراءة في الأرقام</h2>
 <div class="two-col">
   <div>
-    <div class="highlight-box success"><h4>✅ الإيجابيات</h4><ul class="fancy-list" style="margin-top:6px;"><li>نمو المبيعات +13.9% رغم تراجع الفواتير</li><li>قفزة قوية في تيك توك +41.4% مشاهدات</li><li>ارتفاع مشاهدات القائمة +22.7%</li><li>استقرار طلبات الاتجاهات في جوجل +1.2%</li><li>تضاعف عدد الفيديوهات المنشورة +100%</li></ul></div>
+    <div class="highlight-box success"><h4>✅ الإيجابيات</h4><ul class="fancy-list">
+      <li>المبيعات ارتفعت <span class="num">+13.9%</span></li>
+      <li>مبيعات الغداء تضاعفت <span class="num">+114%</span></li>
+      <li>مشاهدات تيك توك <span class="num">+41.4%</span></li>
+      <li>تعليقات تيك توك <span class="num">+55.5%</span></li>
+      <li>مشاهدات قائمة جوجل <span class="num">+22.7%</span></li>
+    </ul></div>
   </div>
   <div>
-    <div class="highlight-box warning"><h4>⚠️ نقاط تحتاج اهتمام</h4><ul class="fancy-list" style="margin-top:6px;"><li>انخفاض المكالمات -57.3% (يحتاج فحص فني عاجل)</li><li>تراجع زيارات البروفايل -7% على تيك توك</li><li>انخفاض المشاركات -8.7% على تيك توك</li><li>تراجع التفاعلات الكلية في جوجل ماب -14.7%</li></ul></div>
+    <div class="highlight-box"><h4>ℹ️ نقاط تحتاج سياق</h4><ul class="fancy-list">
+      <li>انخفاض المكالمات <span class="num">-57.3%</span> — تفسيره: شهر مارس صادف فترة رمضان وكان فيها نظام حجز نشط، مما رفع عدد المكالمات بشكل استثنائي. الأرقام في أبريل عادت لمستواها الطبيعي.</li>
+      <li>شكاوى متكررة: برودة الأكل، طول الانتظار، قسوة بعض اللحوم</li>
+    </ul></div>
   </div>
 </div>
