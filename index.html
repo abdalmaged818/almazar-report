@@ -5,17 +5,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="noindex, nofollow">
   <meta name="theme-color" content="#8B3A2B">
+  <meta name="description" content="لوحة تحكم تقارير الأداء التسويقي الشهري لمطعم المزار الدمشقي — أبريل 2026">
+  <meta property="og:title" content="المزار الدمشقي — تقرير الأداء التسويقي أبريل 2026">
+  <meta property="og:description" content="لوحة تحكم تقارير الأداء التسويقي الشهري لمطعم المزار الدمشقي بالمدينة المنورة">
+  <meta property="og:image" content="./assets/images/og-image.png">
+  <meta property="og:type" content="website">
   <title>المزار الدمشقي — تسجيل الدخول</title>
+  <link rel="icon" type="image/svg+xml" href="./assets/images/favicon.svg">
+  <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&family=Amiri:wght@400;700&family=Playfair+Display:wght@400;700;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/styles/main.css">
+  <link rel="stylesheet" href="./styles/main.css">
 </head>
 <body>
   <div class="login-screen" id="loginScreen">
     <div class="pattern-overlay"></div>
     <div class="login-card">
-      <div class="login-logo">م</div>
+      <div class="login-logo">
+        <img src="./assets/images/logo.svg" alt="المزار الدمشقي" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <div class="login-logo-fallback" style="display:none">م</div>
+      </div>
       <h1 class="login-title">المزار الدمشقي</h1>
       <p class="login-subtitle">REPORT DASHBOARD · APRIL 2026</p>
 
@@ -36,9 +46,8 @@
     </div>
   </div>
 
-  <script type="module" src="/scripts/auth.js"></script>
   <script type="module">
-    import { initLoginPage } from '/scripts/auth.js';
+    import { initLoginPage } from './scripts/auth.js';
     document.addEventListener('DOMContentLoaded', initLoginPage);
   </script>
 </body>
