@@ -51,7 +51,7 @@ function initApp() {
  */
 function handleLogout() {
   logout();
-  window.location.href = '/index.html';
+  window.location.href = './index.html';
 }
 
 /**
