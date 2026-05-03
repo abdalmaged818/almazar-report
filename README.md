@@ -5,7 +5,8 @@
 > Monthly Marketing Report Dashboard for Almazar Aldimashqi Restaurant, Madinah, Saudi Arabia
 
 ## 📊 Live Demo
-https://abdalmaged818.github.io/almazar-report/
+https://almazar-report.vercel.app
+[![Vercel](https://img.shields.io/badge/deployed_on-Vercel-black?logo=vercel)](https://almazar-report.vercel.app)
 
 ## 🔐 Access
 - **Username:** almazar
