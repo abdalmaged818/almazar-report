@@ -1,0 +1,53 @@
+<!-- pages/management.html -->
+<div class="page-header">
+  <div class="page-header-content">
+    <div class="breadcrumb">ACCOUNT MANAGEMENT</div>
+    <h1 class="page-title">إدارة الحسابات والتفاعل</h1>
+    <p class="page-subtitle">الردود والتفاعلات اليومية</p>
+  </div>
+  <span class="page-badge">≡ 440 تفاعل</span>
+</div>
+<h2 class="section-title">إجماليات التفاعل</h2>
+<div class="cards-grid">
+  <div class="kpi-card featured"><div class="kpi-label">إجمالي التعليقات المردودة</div><div class="kpi-value">229</div><div class="kpi-meta">تيك توك 204 + إنستقرام 35</div></div>
+  <div class="kpi-card"><div class="kpi-label">المحادثات</div><div class="kpi-value">88</div><div class="kpi-meta">تيك توك 51 + إنستقرام 37</div></div>
+  <div class="kpi-card"><div class="kpi-label">الستوريز المنشورة</div><div class="kpi-value">118</div><div class="kpi-meta">تيك توك 45 + إنستقرام 73</div></div>
+  <div class="kpi-card"><div class="kpi-label">إعادة النشر</div><div class="kpi-value">43</div><div class="kpi-meta">تيك توك 17 + إنستقرام 26</div></div>
+  <div class="kpi-card"><div class="kpi-label">الفيديوهات / الريلز</div><div class="kpi-value">22</div><div class="kpi-meta">10 + 12</div></div>
+  <div class="kpi-card"><div class="kpi-label">الرد على تقييمات جوجل</div><div class="kpi-value">123</div><div class="kpi-meta">من 138 (89.1%)</div></div>
+</div>
+<h2 class="section-title">التوزيع الأسبوعي</h2>
+<div class="tab-buttons">
+  <button class="tab-btn active" onclick="showTab('mgmt-tt', this)">تيك توك</button>
+  <button class="tab-btn" onclick="showTab('mgmt-ig', this)">إنستقرام</button>
+</div>
+<div class="tab-content active" id="mgmt-tt">
+  <div class="content-card" style="overflow-x:auto;">
+    <table class="data-table">
+      <thead><tr><th>الأسبوع</th><th>تعليقات</th><th>محادثات</th><th>ستوريز</th><th>إعادة نشر</th><th>فيديوهات</th></tr></thead>
+      <tbody>
+        <tr><td>الأول</td><td class="number-cell">63</td><td>13</td><td>11</td><td>9</td><td>2</td></tr>
+        <tr><td>الثاني</td><td class="number-cell">24</td><td>13</td><td>12</td><td>2</td><td>3</td></tr>
+        <tr><td>الثالث</td><td class="number-cell">38</td><td>8</td><td>12</td><td>3</td><td>2</td></tr>
+        <tr><td>الرابع</td><td class="number-cell">62</td><td>14</td><td>8</td><td>3</td><td>1</td></tr>
+        <tr style="background: var(--bg-card); font-weight:700;"><td>الإجمالي</td><td class="number-cell">204</td><td>51</td><td>45</td><td>17</td><td>9</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="content-card"><div class="chart-container"><canvas id="mgmtTtChart"></canvas></div></div>
+</div>
+<div class="tab-content" id="mgmt-ig">
+  <div class="content-card" style="overflow-x:auto;">
+    <table class="data-table">
+      <thead><tr><th>الأسبوع</th><th>تعليقات</th><th>محادثات</th><th>ستوريز</th><th>إعادة نشر</th><th>ريلز</th></tr></thead>
+      <tbody>
+        <tr><td>الأول</td><td class="number-cell">0</td><td>4</td><td>20</td><td>8</td><td>0</td></tr>
+        <tr><td>الثاني</td><td class="number-cell">23</td><td>13</td><td>15</td><td>9</td><td>6</td></tr>
+        <tr><td>الثالث</td><td class="number-cell">5</td><td>8</td><td>19</td><td>4</td><td>4</td></tr>
+        <tr><td>الرابع</td><td class="number-cell">7</td><td>10</td><td>18</td><td>4</td><td>2</td></tr>
+        <tr style="background: var(--bg-card); font-weight:700;"><td>الإجمالي</td><td class="number-cell">35</td><td>37</td><td>73</td><td>26</td><td>12</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="content-card"><div class="chart-container"><canvas id="mgmtIgChart"></canvas></div></div>
+</div>
