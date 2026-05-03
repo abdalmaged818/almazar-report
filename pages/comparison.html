@@ -1,0 +1,59 @@
+<!-- pages/comparison.html -->
+<div class="page-header">
+  <div class="page-header-content">
+    <div class="breadcrumb">MONTH-OVER-MONTH ANALYSIS</div>
+    <h1 class="page-title">مقارنة مارس / أبريل 2026</h1>
+    <p class="page-subtitle">تحليل النمو والتراجع بين الشهرين</p>
+  </div>
+  <span class="page-badge">⇆ MoM</span>
+</div>
+<h2 class="section-title">المبيعات</h2>
+<div class="content-card" style="overflow-x:auto;">
+  <table class="data-table">
+    <thead><tr><th>المؤشر</th><th>مارس 2026</th><th>أبريل 2026</th><th>الفرق</th><th>التغيير</th></tr></thead>
+    <tbody>
+      <tr><td>إجمالي المبيعات</td><td>333,527</td><td class="number-cell">379,724</td><td>+46,197</td><td><span class="comparison-badge up">▲ +13.9%</span></td></tr>
+      <tr><td>عدد الفواتير</td><td>4,809</td><td class="number-cell">4,713</td><td>-96</td><td><span class="comparison-badge down">▼ -2%</span></td></tr>
+      <tr><td>المتوسط اليومي</td><td>10,758</td><td class="number-cell">12,657</td><td>+1,899</td><td><span class="comparison-badge up">▲ +17.7%</span></td></tr>
+    </tbody>
+  </table>
+</div>
+<div class="content-card"><h3>📊 مقارنة المبيعات</h3><div class="chart-container tall"><canvas id="compSalesChart"></canvas></div></div>
+<h2 class="section-title">تيك توك</h2>
+<div class="content-card" style="overflow-x:auto;">
+  <table class="data-table">
+    <thead><tr><th>المؤشر</th><th>مارس</th><th>أبريل</th><th>التغيير</th></tr></thead>
+    <tbody>
+      <tr><td>المشاهدات</td><td>256K</td><td class="number-cell">362K</td><td><span class="comparison-badge up">▲ +41.4%</span></td></tr>
+      <tr><td>اللايكات</td><td>3,100</td><td class="number-cell">3,800</td><td><span class="comparison-badge up">▲ +22.6%</span></td></tr>
+      <tr><td>التعليقات</td><td>263</td><td class="number-cell">409</td><td><span class="comparison-badge up">▲ +55.5%</span></td></tr>
+      <tr><td>المشاركات</td><td>2,300</td><td class="number-cell">2,100</td><td><span class="comparison-badge down">▼ -8.7%</span></td></tr>
+      <tr><td>زيارات البروفايل</td><td>10K</td><td class="number-cell">9,300</td><td><span class="comparison-badge down">▼ -7%</span></td></tr>
+      <tr><td>عدد الفيديوهات</td><td>~5</td><td class="number-cell">10</td><td><span class="comparison-badge up">▲ +100%</span></td></tr>
+    </tbody>
+  </table>
+</div>
+<div class="content-card"><h3>📊 مقارنة الأداء على تيك توك</h3><div class="chart-container tall"><canvas id="compTiktokChart"></canvas></div></div>
+<h2 class="section-title">جوجل ماب</h2>
+<div class="content-card" style="overflow-x:auto;">
+  <table class="data-table">
+    <thead><tr><th>المؤشر</th><th>مارس</th><th>أبريل</th><th>التغيير</th></tr></thead>
+    <tbody>
+      <tr><td>إجمالي التفاعلات</td><td>8,327</td><td class="number-cell">7,103</td><td><span class="comparison-badge down">▼ -14.7%</span></td></tr>
+      <tr><td>طلبات الاتجاهات</td><td>3,199</td><td class="number-cell">3,237</td><td><span class="comparison-badge up">▲ +1.2%</span></td></tr>
+      <tr><td>المكالمات</td><td>2,938</td><td class="number-cell">1,255</td><td><span class="comparison-badge down">▼ -57.3%</span></td></tr>
+      <tr><td>زيارات الموقع</td><td>256</td><td class="number-cell">238</td><td><span class="comparison-badge down">▼ -7%</span></td></tr>
+      <tr><td>مشاهدات القائمة</td><td>1,934</td><td class="number-cell">2,373</td><td><span class="comparison-badge up">▲ +22.7%</span></td></tr>
+    </tbody>
+  </table>
+</div>
+<div class="content-card"><h3>📊 مقارنة جوجل ماب</h3><div class="chart-container tall"><canvas id="compGoogleChart"></canvas></div></div>
+<h2 class="section-title">قراءة في الأرقام</h2>
+<div class="two-col">
+  <div>
+    <div class="highlight-box success"><h4>✅ الإيجابيات</h4><ul class="fancy-list" style="margin-top:6px;"><li>نمو المبيعات +13.9% رغم تراجع الفواتير</li><li>قفزة قوية في تيك توك +41.4% مشاهدات</li><li>ارتفاع مشاهدات القائمة +22.7%</li><li>استقرار طلبات الاتجاهات في جوجل +1.2%</li><li>تضاعف عدد الفيديوهات المنشورة +100%</li></ul></div>
+  </div>
+  <div>
+    <div class="highlight-box warning"><h4>⚠️ نقاط تحتاج اهتمام</h4><ul class="fancy-list" style="margin-top:6px;"><li>انخفاض المكالمات -57.3% (يحتاج فحص فني عاجل)</li><li>تراجع زيارات البروفايل -7% على تيك توك</li><li>انخفاض المشاركات -8.7% على تيك توك</li><li>تراجع التفاعلات الكلية في جوجل ماب -14.7%</li></ul></div>
+  </div>
+</div>
