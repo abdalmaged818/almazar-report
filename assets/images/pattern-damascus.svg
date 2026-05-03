@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" width="80" height="80">
+  <defs>
+    <pattern id="damascus" x="0" y="0" width="80" height="80" patternUnits="userSpaceOnUse">
+      <!-- Central 8-pointed star (traditional Damascene motif) -->
+      <polygon points="40,8 46,26 62,20 52,34 68,40 52,46 62,60 46,54 40,72 34,54 18,60 28,46 12,40 28,34 18,20 34,26" fill="currentColor" opacity="0.15"/>
+      <!-- Inner diamond -->
+      <polygon points="40,22 50,40 40,58 30,40" fill="currentColor" opacity="0.1"/>
+      <!-- Corner quarter stars -->
+      <polygon points="0,0 6,0 0,6" fill="currentColor" opacity="0.12"/>
+      <polygon points="80,0 80,6 74,0" fill="currentColor" opacity="0.12"/>
+      <polygon points="0,80 6,80 0,74" fill="currentColor" opacity="0.12"/>
+      <polygon points="80,80 74,80 80,74" fill="currentColor" opacity="0.12"/>
+      <!-- Small diamonds at cardinal points -->
+      <rect x="38" y="2" width="4" height="4" transform="rotate(45 40 4)" fill="currentColor" opacity="0.1"/>
+      <rect x="38" y="74" width="4" height="4" transform="rotate(45 40 76)" fill="currentColor" opacity="0.1"/>
+      <rect x="2" y="38" width="4" height="4" transform="rotate(45 4 40)" fill="currentColor" opacity="0.1"/>
+      <rect x="74" y="38" width="4" height="4" transform="rotate(45 76 40)" fill="currentColor" opacity="0.1"/>
+    </pattern>
+  </defs>
+  <rect width="80" height="80" fill="url(#damascus)"/>
+</svg>
