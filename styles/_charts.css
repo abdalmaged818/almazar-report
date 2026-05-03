@@ -1,0 +1,5 @@
+/* _charts.css */
+.chart-container { position: relative; height: 300px; margin-top: 16px; width: 100%; }
+.chart-container.tall { height: 380px; }
+.chart-container.short { height: 200px; }
+canvas { max-width: 100%; }
