@@ -1,0 +1,18 @@
+/* main.css — Imports all CSS partials */
+/* Settings */
+@import './_variables.css';
+/* Generic */
+@import './_reset.css';
+/* Elements */
+@import './_typography.css';
+/* Layout */
+@import './_layout.css';
+/* Components */
+@import './_components.css';
+@import './_charts.css';
+/* Pages */
+@import './_login.css';
+/* Animations */
+@import './_animations.css';
+/* Responsive */
+@import './_responsive.css';
