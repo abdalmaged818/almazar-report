@@ -34,7 +34,7 @@ export function logout() {
  */
 export function requireAuth() {
   if (!isAuthenticated()) {
-    window.location.href = '/index.html';
+    window.location.href = './index.html';
     return false;
   }
   return true;
@@ -52,7 +52,7 @@ export function initLoginPage() {
 
   // If already authenticated, go to dashboard
   if (isAuthenticated()) {
-    window.location.href = '/dashboard.html';
+    window.location.href = './dashboard.html';
     return;
   }
 
