@@ -7,7 +7,7 @@ export const REPORT_DATA = {
   },
   sales: {
     april: { total: 379724, invoices: 4713, dailyAvg: 12657, period: "أبريل 2026" },
-    march: { total: 333527, invoices: 4809, dailyAvg: 10758, period: "مارس 2026" },
+    march: { total: 333527, invoices: 4089, dailyAvg: 10758, period: "مارس 2026" },
     lunch: {
       before: { daily: 1600, invoices: 19, label: "قبل الحملة" },
       firstWeek: { daily: 3300, invoices: null, label: "الأسبوع الأول" },
@@ -81,7 +81,7 @@ export const REPORT_DATA = {
       { rank: 1, tier: "gold", name: "سارا", handle: "@sxc434", initial: "س", visitDate: "4 أبريل", views: 68700, likes: 1028, shares: 920, saves: 845, published: true, videoUrl: "https://www.tiktok.com/@sxc434/video/7624884456121175314" },
       { rank: 2, tier: "silver", name: "فلوقس", handle: "@vlogsv.ii", initial: "ف", visitDate: "6 أبريل", views: 8219, likes: 102, shares: 73, saves: 38, published: true, videoUrl: "https://vt.tiktok.com/ZSHf8GUST/" },
       { rank: 3, tier: "bronze", name: "رنا", handle: "@1rll0i", initial: "ر", visitDate: "5 أبريل", views: 3466, likes: 120, shares: 17, saves: 27, published: true, cost: 139, videoUrl: "https://www.tiktok.com/@1rll0i/video/7625304603843677458" },
-      { rank: 4, tier: "default", name: "تغطيات مون", handle: "@moon.vloog", initial: "م", publishDate: "14 أبريل", views: 3428, likes: 199, shares: 61, saves: 147, published: false, videoUrl: "https://www.tiktok.com/@moon.vloog/video/7628381088812977415" },
+      { rank: 4, tier: "default", name: "تغطيات مون", handle: "@moon.vloog", initial: "م", publishDate: "14 أبريل", views: 3428, likes: 199, shares: 61, saves: 147, published: true, videoUrl: "https://www.tiktok.com/@moon.vloog/video/7628381088812977415" },
       { rank: 5, tier: "default", name: "لميس", handle: "@uiily.l", initial: "ل", visitDate: "4 أبريل", views: 2293, likes: 102, shares: 81, saves: 18, published: true, videoUrl: "https://www.tiktok.com/@uiily.l/video/7624948812049698056" },
       { rank: 6, tier: "default", name: "ليال — تغطيات المدينة", handle: "@_tr5e", initial: "ل", visitDate: "2 أبريل", views: 1515, likes: 141, shares: 55, saves: 21, published: true, videoUrl: "https://www.tiktok.com/@_tr5e/video/7624193177905335572" },
       { rank: 7, tier: "default", name: "خلود عبدالله", handle: "@k1419.5", initial: "خ", visitDate: "3 أبريل", publishDate: "4 أبريل", views: 1494, likes: 47, shares: 29, saves: 10, published: true, videoUrl: "https://www.tiktok.com/@k1419.5/video/7624640473352785170" }
