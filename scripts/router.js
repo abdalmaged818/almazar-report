@@ -57,7 +57,7 @@ async function loadPageContent(pageId) {
   destroyCharts();
   
   try {
-    const response = await fetch(`/pages/${pageId}.html`);
+    const response = await fetch(`./pages/${pageId}.html`);
     if (!response.ok) throw new Error(`Failed to load ${pageId}`);
     const html = await response.text();
     container.innerHTML = html;
