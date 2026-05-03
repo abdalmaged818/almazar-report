@@ -1,0 +1,24 @@
+/* _responsive.css */
+@media (max-width: 1280px) { .main-content { padding: var(--space-xl); } }
+@media (max-width: 1100px) { .two-col { grid-template-columns: 1fr; } }
+@media (max-width: 900px) {
+  .sidebar { transform: translateX(100%); box-shadow: var(--shadow-xl); }
+  .sidebar.open { transform: translateX(0); }
+  .main-content { margin-right: 0; padding: 70px 20px 30px; }
+  .mobile-menu-btn { display: flex; align-items: center; justify-content: center; }
+  .page-title { font-size: 24px; }
+  .kpi-value { font-size: 22px; }
+  .sales-comparison { grid-template-columns: 1fr; }
+  .influencer-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 640px) {
+  .login-card { padding: 32px 24px; margin: 16px; }
+  .cards-grid { grid-template-columns: 1fr 1fr; }
+  .chart-container { height: 250px; }
+  .chart-container.tall { height: 300px; }
+}
+@media print {
+  .sidebar, .mobile-menu-btn, .btn-logout { display: none !important; }
+  .main-content { margin: 0; padding: 20px; }
+  .page { display: block !important; page-break-after: always; }
+}
