@@ -4,8 +4,44 @@
 .login-screen::after { content: ''; position: absolute; width: 800px; height: 800px; background: radial-gradient(circle, rgba(166,90,74,0.15) 0%, transparent 70%); bottom: -300px; left: -300px; border-radius: 50%; }
 .pattern-overlay { position: absolute; inset: 0; opacity: 0.04; background-image: repeating-linear-gradient(45deg, transparent 0, transparent 35px, #fff 35px, #fff 36px), repeating-linear-gradient(-45deg, transparent 0, transparent 35px, #fff 35px, #fff 36px); pointer-events: none; }
 .login-card { background: var(--bg-main); border-radius: var(--radius-xl); padding: 48px 40px; width: 100%; max-width: 440px; position: relative; z-index: 2; box-shadow: var(--shadow-xl); }
-.login-logo { width: 90px; height: 90px; margin: 0 auto var(--space-lg); background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%); border-radius: var(--radius-xl); display: flex; align-items: center; justify-content: center; color: white; font-family: var(--font-display); font-size: 36px; font-weight: 900; letter-spacing: -2px; box-shadow: 0 8px 24px rgba(139,58,43,0.3); position: relative; }
-.login-logo::after { content: ''; position: absolute; inset: -4px; border: 2px solid var(--primary); border-radius: 28px; opacity: 0.2; }
+
+/* ============================================
+   LOGIN LOGO — Robust display with fallback
+   ============================================ */
+.login-logo {
+    position: relative;
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+    border: 3px solid rgba(255,255,255,0.3);
+    box-shadow: 0 8px 24px rgba(139,58,43,0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto var(--space-lg);
+    overflow: hidden;
+}
+
+.login-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding: 14px;
+    display: block;
+}
+
+.login-logo-fallback {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 52px;
+    font-weight: 700;
+    color: white;
+    line-height: 1;
+    display: none;
+}
+
+.login-logo::after { content: ''; position: absolute; inset: -4px; border: 2px solid var(--primary); border-radius: 50%; opacity: 0.2; }
+
 .login-title { text-align: center; font-size: 24px; font-weight: 700; color: var(--text-main); margin-bottom: 6px; }
 .login-subtitle { text-align: center; font-size: 14px; color: var(--text-secondary); margin-bottom: 32px; letter-spacing: 0.5px; }
 .input-group { margin-bottom: 18px; position: relative; }
