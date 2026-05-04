@@ -130,98 +130,92 @@
    ============================================ */
 
 .comparison-table-wrapper {
-    width: 100%;
-    background: #FFFFFF;
-    border: 1px solid #EAE6E1;
-    border-radius: 8px;
-    overflow: hidden;
-    margin: 16px 0 24px;
-    box-shadow: 0 1px 3px rgba(31, 31, 31, 0.04);
+     width: 100%;
+     background: #FFFFFF;
+     border: 1px solid #EAE6E1;
+     border-radius: 8px;
+     overflow: hidden;
+     margin: 16px 0 24px;
+     box-shadow: 0 1px 3px rgba(31, 31, 31, 0.04);
 }
 
 .comparison-table {
-    width: 100%;
-    border-collapse: collapse;
-    font-family: 'Tajawal', sans-serif;
-    direction: rtl;
+     width: 100%;
+     border-collapse: collapse;
+     font-family: 'Tajawal', sans-serif;
+     direction: rtl;
 }
 
 /* HEADER */
 .comparison-table thead th {
-    background: #F5F2EE;
-    color: #6B6B6B;
-    font-family: 'Tajawal', sans-serif;
-    font-size: 11px;
-    font-weight: 700;
-    letter-spacing: 0.02em;
-    padding: 12px 14px;
-    border-bottom: 2px solid #EAE6E1;
-    text-align: center;
-    white-space: nowrap;
-}
-
-/* المؤشر column (rightmost in RTL) — right aligned */
-.comparison-table thead th:last-child,
-.comparison-table tbody td:last-child {
-    text-align: right;
-    padding-right: 18px;
+     background: #F5F2EE;
+     color: #6B6B6B;
+     font-family: 'Tajawal', sans-serif;
+     font-size: 11px;
+     font-weight: 700;
+     letter-spacing: 0.02em;
+     padding: 12px 14px;
+     border-bottom: 2px solid #EAE6E1;
+     text-align: center;
+     white-space: nowrap;
 }
 
 /* DATA CELLS */
 .comparison-table tbody td {
-    padding: 14px;
-    border-bottom: 1px solid #EAE6E1;
-    font-size: 13px;
-    text-align: center;
-    vertical-align: middle;
-    background: #FFFFFF;
-    transition: background 0.15s ease;
+     padding: 14px;
+     border-bottom: 1px solid #EAE6E1;
+     font-size: 13px;
+     text-align: center;
+     vertical-align: middle;
+     background: #FFFFFF;
+     transition: background 0.15s ease;
 }
 
 .comparison-table tbody tr:last-child td {
-    border-bottom: none;
+     border-bottom: none;
 }
 
 .comparison-table tbody tr:hover td {
-    background: #FAFAF7;
+     background: #FAFAF7;
 }
 
-/* المؤشر cell (metric name) */
-.comparison-table tbody td:last-child {
-    color: #1F1F1F;
-    font-weight: 500;
-    font-size: 13px;
-    font-family: 'Tajawal', sans-serif;
+/* المؤشر cell (metric name) — uses class .metric-name */
+.comparison-table .metric-name,
+.comparison-table tbody td.metric-name {
+     color: #1F1F1F;
+     font-weight: 500;
+     font-size: 13px;
+     font-family: 'Tajawal', sans-serif;
+     text-align: right;
+     padding-right: 18px;
 }
 
 /* مارس 2026 cell (older data — muted) */
-.comparison-table tbody td.value-march,
-.comparison-table tbody td:nth-last-child(2) {
-    color: #6B6B6B;
-    font-weight: 500;
-    font-family: 'Playfair Display', Georgia, serif;
-    font-feature-settings: 'lnum' 1, 'tnum' 1;
+.comparison-table tbody td.value-march {
+     color: #6B6B6B;
+     font-weight: 500;
+     font-family: 'Playfair Display', Georgia, serif;
+     font-feature-settings: 'lnum' 1, 'tnum' 1;
 }
 
 /* أبريل 2026 cell (newest data — HIGHLIGHTED) */
-.comparison-table tbody td.value-april,
-.comparison-table tbody td:nth-last-child(3) {
-    color: #8B3A2B;
-    font-weight: 700;
-    font-size: 14px;
-    font-family: 'Playfair Display', Georgia, serif;
-    font-feature-settings: 'lnum' 1, 'tnum' 1;
-    letter-spacing: -0.01em;
+.comparison-table tbody td.value-april {
+     color: #8B3A2B;
+     font-weight: 700;
+     font-size: 14px;
+     font-family: 'Playfair Display', Georgia, serif;
+     font-feature-settings: 'lnum' 1, 'tnum' 1;
+     letter-spacing: -0.01em;
 }
 
-/* التغيير cell (change column — leftmost in RTL) */
+/* التغيير cell (change column) */
 .comparison-table tbody td.change-up,
 .comparison-table tbody td.change-down,
 .comparison-table tbody td.change-neutral {
-    font-weight: 700;
-    font-size: 13px;
-    font-family: 'Tajawal', sans-serif;
-    white-space: nowrap;
+     font-weight: 700;
+     font-size: 13px;
+     font-family: 'Tajawal', sans-serif;
+     white-space: nowrap;
 }
 
 .comparison-table tbody td.change-up { color: #2E7D32; }
@@ -231,34 +225,33 @@
 /* The number portion within change cells */
 .comparison-table .change-up .num,
 .comparison-table .change-down .num {
-    font-family: 'Playfair Display', Georgia, serif;
-    font-feature-settings: 'lnum' 1, 'tnum' 1;
+     font-family: 'Playfair Display', Georgia, serif;
+     font-feature-settings: 'lnum' 1, 'tnum' 1;
 }
 
 /* TOTAL / FOOTER ROW */
-.comparison-table tbody tr.total-row td,
-.comparison-table tbody tr:last-child.is-total td {
-    background: #E8E1D9;
-    font-weight: 700;
-    border-top: 2px solid #8B3A2B;
-    border-bottom: none;
+.comparison-table tbody tr.total-row td {
+     background: #E8E1D9;
+     font-weight: 700;
+     border-top: 2px solid #8B3A2B;
+     border-bottom: none;
 }
 
 .comparison-table tbody tr.total-row td.value-april {
-    color: #5C2A1F;
-    font-size: 15px;
+     color: #5C2A1F;
+     font-size: 15px;
 }
 
 /* RESPONSIVE */
 @media (max-width: 640px) {
-    .comparison-table thead th,
-    .comparison-table tbody td {
-          padding: 10px 8px;
-          font-size: 12px;
-    }
-    .comparison-table tbody td.value-april {
-          font-size: 13px;
-    }
+     .comparison-table thead th,
+     .comparison-table tbody td {
+            padding: 10px 8px;
+            font-size: 12px;
+     }
+     .comparison-table tbody td.value-april {
+            font-size: 13px;
+     }
 }
 
 
@@ -268,30 +261,28 @@
 
 /* Apply to ANY element used for numbers */
 .num, .kpi-value, .stat-value, .metric-value, .value-april, .value-march, .percentage,
-[data-num],
-.comparison-table tbody td:nth-last-child(2),
-.comparison-table tbody td:nth-last-child(3) {
-    font-family: 'Playfair Display', 'Times New Roman', Georgia, serif !important;
-    font-feature-settings: 'lnum' 1, 'tnum' 1;
-    font-variant-numeric: lining-nums tabular-nums;
-    letter-spacing: -0.01em;
+[data-num] {
+     font-family: 'Playfair Display', 'Times New Roman', Georgia, serif !important;
+     font-feature-settings: 'lnum' 1, 'tnum' 1;
+     font-variant-numeric: lining-nums tabular-nums;
+     letter-spacing: -0.01em;
 }
 
 /* KPI card large numbers — extra polish */
 .kpi-card .value, .kpi-card .kpi-value, .kpi-value-large {
-    font-family: 'Playfair Display', Georgia, serif !important;
-    font-weight: 700;
-    font-feature-settings: 'lnum' 1, 'tnum' 1;
-    letter-spacing: -0.02em;
-    line-height: 1.1;
+     font-family: 'Playfair Display', Georgia, serif !important;
+     font-weight: 700;
+     font-feature-settings: 'lnum' 1, 'tnum' 1;
+     letter-spacing: -0.02em;
+     line-height: 1.1;
 }
 
 /* English/Latin breadcrumbs and labels */
 .breadcrumb, .section-label-en, .badge-en, [lang="en"] {
-    font-family: 'Playfair Display', Georgia, serif;
-    letter-spacing: 0.05em;
+     font-family: 'Playfair Display', Georgia, serif;
+     letter-spacing: 0.05em;
 }
 
 .trend-up, .trend-down {
-    font-family: 'Playfair Display', Georgia, serif;
+     font-family: 'Playfair Display', Georgia, serif;
 }
