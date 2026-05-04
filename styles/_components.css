@@ -1,4 +1,6 @@
 /* _components.css */
+/* Version: Phase 4 Final - 2026-05-04 */
+
 /* KPI Cards */
 .kpi-card { background: var(--bg-main); padding: 22px; border-radius: var(--radius-lg); border: 1px solid var(--border); transition: all var(--transition-base); position: relative; overflow: hidden; }
 .kpi-card::before { content: ''; position: absolute; top: 0; right: 0; width: 4px; height: 100%; background: var(--primary); opacity: 0; transition: opacity var(--transition-base); }
@@ -125,164 +127,202 @@
 .report-footer .brand-mark { font-family: var(--font-display); font-weight: 700; color: var(--primary); letter-spacing: 1px; }
 
 
-/* ============================================
-   COMPARISON TABLES — Professional Style (Phase 4)
-   ============================================ */
+/* ============================================================
+   COMPARISON TABLES — Professional Style (Phase 4 Bulletproof)
+   ============================================================ */
 
+/* Wrapper — gives the table its outer card look */
 .comparison-table-wrapper {
-     width: 100%;
-     background: #FFFFFF;
-     border: 1px solid #EAE6E1;
-     border-radius: 8px;
-     overflow: hidden;
-     margin: 16px 0 24px;
-     box-shadow: 0 1px 3px rgba(31, 31, 31, 0.04);
+  width: 100% !important;
+  background: #FFFFFF !important;
+  border: 1px solid #EAE6E1 !important;
+  border-radius: 8px !important;
+  overflow: hidden !important;
+  margin: 16px 0 24px !important;
+  box-shadow: 0 1px 3px rgba(31, 31, 31, 0.04) !important;
+  box-sizing: border-box;
 }
 
+/* Table itself */
 .comparison-table {
-     width: 100%;
-     border-collapse: collapse;
-     font-family: 'Tajawal', sans-serif;
-     direction: rtl;
+  width: 100% !important;
+  border-collapse: collapse !important;
+  border-spacing: 0 !important;
+  font-family: 'Tajawal', sans-serif !important;
+  direction: rtl !important;
+  display: table !important;
+  table-layout: auto;
 }
+
+.comparison-table thead { display: table-header-group !important; }
+.comparison-table tbody { display: table-row-group !important; }
+.comparison-table tr { display: table-row !important; }
+.comparison-table th,
+.comparison-table td { display: table-cell !important; }
 
 /* HEADER */
 .comparison-table thead th {
-     background: #F5F2EE;
-     color: #6B6B6B;
-     font-family: 'Tajawal', sans-serif;
-     font-size: 11px;
-     font-weight: 700;
-     letter-spacing: 0.02em;
-     padding: 12px 14px;
-     border-bottom: 2px solid #EAE6E1;
-     text-align: center;
-     white-space: nowrap;
+  background: #F5F2EE !important;
+  color: #6B6B6B !important;
+  font-family: 'Tajawal', sans-serif !important;
+  font-size: 11px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.02em !important;
+  padding: 12px 14px !important;
+  border-bottom: 2px solid #EAE6E1 !important;
+  text-align: center !important;
+  white-space: nowrap !important;
+  text-transform: none !important;
 }
 
-/* DATA CELLS */
+/* DATA CELLS — base styling */
 .comparison-table tbody td {
-     padding: 14px;
-     border-bottom: 1px solid #EAE6E1;
-     font-size: 13px;
-     text-align: center;
-     vertical-align: middle;
-     background: #FFFFFF;
-     transition: background 0.15s ease;
+  padding: 14px !important;
+  border-bottom: 1px solid #EAE6E1 !important;
+  font-size: 13px !important;
+  text-align: center !important;
+  vertical-align: middle !important;
+  background: #FFFFFF !important;
+  transition: background 0.15s ease;
+  color: #1F1F1F;
 }
 
 .comparison-table tbody tr:last-child td {
-     border-bottom: none;
+  border-bottom: none !important;
 }
 
 .comparison-table tbody tr:hover td {
-     background: #FAFAF7;
+  background: #FAFAF7 !important;
 }
 
-/* المؤشر cell (metric name) — uses class .metric-name */
+/* المؤشر cell (metric name) */
 .comparison-table .metric-name,
 .comparison-table tbody td.metric-name {
-     color: #1F1F1F;
-     font-weight: 500;
-     font-size: 13px;
-     font-family: 'Tajawal', sans-serif;
-     text-align: right;
-     padding-right: 18px;
+  color: #1F1F1F !important;
+  font-weight: 500 !important;
+  font-size: 13px !important;
+  font-family: 'Tajawal', sans-serif !important;
+  text-align: right !important;
+  padding-right: 18px !important;
 }
 
-/* مارس 2026 cell (older data — muted) */
+/* مارس 2026 cell (older — muted) */
 .comparison-table tbody td.value-march {
-     color: #6B6B6B;
-     font-weight: 500;
-     font-family: 'Playfair Display', Georgia, serif;
-     font-feature-settings: 'lnum' 1, 'tnum' 1;
+  color: #6B6B6B !important;
+  font-weight: 500 !important;
+  font-family: 'Playfair Display', Georgia, serif !important;
+  font-feature-settings: 'lnum' 1, 'tnum' 1 !important;
+  font-variant-numeric: lining-nums tabular-nums;
 }
 
-/* أبريل 2026 cell (newest data — HIGHLIGHTED) */
+/* أبريل 2026 cell (newest — HIGHLIGHTED in brown) */
 .comparison-table tbody td.value-april {
-     color: #8B3A2B;
-     font-weight: 700;
-     font-size: 14px;
-     font-family: 'Playfair Display', Georgia, serif;
-     font-feature-settings: 'lnum' 1, 'tnum' 1;
-     letter-spacing: -0.01em;
+  color: #8B3A2B !important;
+  font-weight: 700 !important;
+  font-size: 14px !important;
+  font-family: 'Playfair Display', Georgia, serif !important;
+  font-feature-settings: 'lnum' 1, 'tnum' 1 !important;
+  font-variant-numeric: lining-nums tabular-nums;
+  letter-spacing: -0.01em !important;
 }
 
 /* التغيير cell (change column) */
 .comparison-table tbody td.change-up,
 .comparison-table tbody td.change-down,
 .comparison-table tbody td.change-neutral {
-     font-weight: 700;
-     font-size: 13px;
-     font-family: 'Tajawal', sans-serif;
-     white-space: nowrap;
+  font-weight: 700 !important;
+  font-size: 13px !important;
+  font-family: 'Tajawal', sans-serif !important;
+  white-space: nowrap !important;
 }
 
-.comparison-table tbody td.change-up { color: #2E7D32; }
-.comparison-table tbody td.change-down { color: #C62828; }
-.comparison-table tbody td.change-neutral { color: #6B6B6B; }
+.comparison-table tbody td.change-up    { color: #2E7D32 !important; }
+.comparison-table tbody td.change-down  { color: #C62828 !important; }
+.comparison-table tbody td.change-neutral { color: #6B6B6B !important; }
 
 /* The number portion within change cells */
 .comparison-table .change-up .num,
-.comparison-table .change-down .num {
-     font-family: 'Playfair Display', Georgia, serif;
-     font-feature-settings: 'lnum' 1, 'tnum' 1;
+.comparison-table .change-down .num,
+.comparison-table .change-neutral .num {
+  font-family: 'Playfair Display', Georgia, serif !important;
+  font-feature-settings: 'lnum' 1, 'tnum' 1 !important;
+  font-variant-numeric: lining-nums tabular-nums;
 }
 
 /* TOTAL / FOOTER ROW */
 .comparison-table tbody tr.total-row td {
-     background: #E8E1D9;
-     font-weight: 700;
-     border-top: 2px solid #8B3A2B;
-     border-bottom: none;
+  background: #E8E1D9 !important;
+  font-weight: 700 !important;
+  border-top: 2px solid #8B3A2B !important;
+  border-bottom: none !important;
+}
+
+.comparison-table tbody tr.total-row:hover td {
+  background: #E8E1D9 !important;
 }
 
 .comparison-table tbody tr.total-row td.value-april {
-     color: #5C2A1F;
-     font-size: 15px;
+  color: #5C2A1F !important;
+  font-size: 15px !important;
 }
 
-/* RESPONSIVE */
+/* RESPONSIVE — Mobile */
 @media (max-width: 640px) {
-     .comparison-table thead th,
-     .comparison-table tbody td {
-            padding: 10px 8px;
-            font-size: 12px;
-     }
-     .comparison-table tbody td.value-april {
-            font-size: 13px;
-     }
+  .comparison-table thead th,
+  .comparison-table tbody td {
+    padding: 10px 8px !important;
+    font-size: 12px !important;
+  }
+  .comparison-table tbody td.value-april {
+    font-size: 13px !important;
+  }
+  .comparison-table .metric-name,
+  .comparison-table tbody td.metric-name {
+    padding-right: 10px !important;
+  }
 }
 
 
-/* ============================================
+/* ============================================================
    NUMBER TYPOGRAPHY — Bulletproof (Phase 4)
-   ============================================ */
+   ============================================================ */
 
-/* Apply to ANY element used for numbers */
-.num, .kpi-value, .stat-value, .metric-value, .value-april, .value-march, .percentage,
+/* Apply Playfair Display to ANY element used for numbers */
+.num,
+.kpi-value,
+.stat-value,
+.metric-value,
+.value-april,
+.value-march,
+.percentage,
 [data-num] {
-     font-family: 'Playfair Display', 'Times New Roman', Georgia, serif !important;
-     font-feature-settings: 'lnum' 1, 'tnum' 1;
-     font-variant-numeric: lining-nums tabular-nums;
-     letter-spacing: -0.01em;
+  font-family: 'Playfair Display', 'Times New Roman', Georgia, serif !important;
+  font-feature-settings: 'lnum' 1, 'tnum' 1 !important;
+  font-variant-numeric: lining-nums tabular-nums !important;
+  letter-spacing: -0.01em;
 }
 
 /* KPI card large numbers — extra polish */
-.kpi-card .value, .kpi-card .kpi-value, .kpi-value-large {
-     font-family: 'Playfair Display', Georgia, serif !important;
-     font-weight: 700;
-     font-feature-settings: 'lnum' 1, 'tnum' 1;
-     letter-spacing: -0.02em;
-     line-height: 1.1;
+.kpi-card .value,
+.kpi-card .kpi-value,
+.kpi-value-large {
+  font-family: 'Playfair Display', Georgia, serif !important;
+  font-weight: 700 !important;
+  font-feature-settings: 'lnum' 1, 'tnum' 1 !important;
+  letter-spacing: -0.02em !important;
+  line-height: 1.1 !important;
 }
 
 /* English/Latin breadcrumbs and labels */
-.breadcrumb, .section-label-en, .badge-en, [lang="en"] {
-     font-family: 'Playfair Display', Georgia, serif;
-     letter-spacing: 0.05em;
+.breadcrumb,
+.section-label-en,
+.badge-en,
+[lang="en"] {
+  font-family: 'Playfair Display', Georgia, serif !important;
+  letter-spacing: 0.05em !important;
 }
 
-.trend-up, .trend-down {
-     font-family: 'Playfair Display', Georgia, serif;
+.trend-up,
+.trend-down {
+  font-family: 'Playfair Display', Georgia, serif !important;
 }
